@@ -2,6 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const fetch = require('node-fetch')
 const helpers = require('./helpers')
+const PORT = process.env.PORT || 5000
 
 const app = express()
 
@@ -52,4 +53,4 @@ app.use((err, req, res, next) => {
   res.send('error', JSON.stringify(err, null, 2))
 })
 
-module.exports = app
+app.listen(PORT, () => console.log(`Listening on ${PORT}`))
