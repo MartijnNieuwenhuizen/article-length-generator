@@ -7,6 +7,7 @@ const app = express()
 
 app.use((req, res, next) => {
   res.header('access-control-allow-origin', '*')
+  res.header('access-control-allow-origin', 'http://localhost:3000/')
   res.header(
     'Access-Control-Allow-Headers',
     'Content-Type, Content-Length, Authorization, Accept, X-Requested-With'
