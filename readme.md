@@ -6,7 +6,7 @@ Get the amount of words on a web page.
 
 # Usage
 
-Perform a **POST** or **GET** request to the site's url, with the URL from the site you would like to know the amount of words of provided as query like this:
+Performm a **POST** or **GET** request to the site's url, with the URL from the site you would like to know the amount of words of provided as query like this:
 
 ```
 https://article-length-generator.herokuapp.com?targetUrl=https://www.asite/a-article
